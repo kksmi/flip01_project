@@ -1,0 +1,422 @@
+%=================================================================
+\DIFaddbegin 
+
+\DIFaddend \section{Introduction}\label{sec-intro}
+
+
+%\todo{Narrow down to a topic; Dig a hole; Fill the hole}
+\DIFdelbegin %DIFDELCMD < \todo{Formula for Introduction}
+%DIFDELCMD < %%%
+\DIFdelend 
+
+
+
+
+%\gangli{``narrow in on topic'' reminds you 
+%that readers and reviewers only know that this is a AI or HTM research paper (and maybe have read the title/abstract). 
+%You need to help them figure out what topic and area of research paper this is. 
+%You _don't_ need to wax poetic about the topic's importance.}
+
+%\gangli{`dig a hole'' reminds you that 
+%you need to convince the reader that there's a problem with the state of the world. 
+%Prior work may exist but it's either missing something important or there's a missing opportunity. 
+%The reader should be drooling for a bright future just out of reach.}
+
+%\gangli{``fill the hole'' reminds you to show the reader 
+%how and why the paper they're reading will fix these problems and deliver us into a better place. 
+%You don't need a whirlwind summary of the technical details, 
+%but you need readers convinced (and in a good mood) to keep reading.}
+
+
+
+
+
+\DIFdelbegin %DIFDELCMD < \gangli{A good paper introduction is fairly formulaic. 
+%DIFDELCMD < If you follow a simple set of rules, 
+%DIFDELCMD < you can write a very good introduction. 
+%DIFDELCMD < The following outline can be varied. 
+%DIFDELCMD < For example, 
+%DIFDELCMD < you can use two paragraphs instead of one, 
+%DIFDELCMD < or you can place more emphasis on one aspect of the intro than another. 
+%DIFDELCMD < But in all cases, 
+%DIFDELCMD < all of the points below need to be covered in an introduction, 
+%DIFDELCMD < and in most papers, 
+%DIFDELCMD < you don't need to cover anything more in an introduction.}
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend %\todo{The importance of the area}
+%\blindtext
+\DIFdelbegin %DIFDELCMD < \todo{Motivation}
+%DIFDELCMD < %%%
+\DIFdel{At a high level, 
+what is the problem area you are working in and why is it important? 
+It is important to set the larger context here. Why is the problem of interest and importance to the larger community?
+}\DIFdelend 
+
+\DIFaddbegin \DIFadd{Sales forecasting using time series is one of the most important applications in business and economics. It helps businesses make production plans, inventory management, sales and marketing strategies, etc. based on the predicted future sales. Time series forecasting can be done using various models and algorithms such as linear regression, exponential smoothing, ARIMA, neural networks, etc. 
+}
+
+
+\DIFaddend %\todo{The problems faced by most current methods}
+%\blindtext
+\DIFdelbegin %DIFDELCMD < \todo{What is the specific problem considered in this paper?}
+%DIFDELCMD < %%%
+\DIFdel{This paragraph narrows down the topic area of the paper.In the first paragraph you have established general context and importance.
+Here you establish specific context and background.
+}\DIFdelend \DIFaddbegin 
+
+\DIFadd{This sales forecasting task has multiple factors that need to be considered. It is necessary to take into account the impact of multiple factors on the forecasting goal.Consider how to perform data analysis to simplify the model prediction goal.
+}\DIFaddend 
+
+%\todo{What can be addressed by existing methods; Why those problems are challenges to existing methods?}
+%\blindtext
+\DIFdelbegin %DIFDELCMD < \todo{Contribution}
+%DIFDELCMD < %%%
+\DIFdel{"In this paper, we show that ...". 
+This is the key paragraph in the intro - you summarize, in one paragraph, what are the main contributions of your paper given the context 
+you have established in paragraphs 1 and 2. 
+What is the general approach taken? 
+Why are the specific results significant? 
+This paragraph must be really good. 
+}\DIFdelend 
+
+
+
+
+
+
+
+\DIFdelbegin \DIFdel{You should think about how to structure these one or 
+two paragraph summaries of what your paper is all about. If there are two or three main results, then you might consider itemizing them with bullets or in test. }%DIFDELCMD < \begin{itemize}
+\begin{itemize}%DIFAUXCMD
+%DIFDELCMD < 	\item %%%
+\item%DIFAUXCMD
+\DIFdel{e.g., First ...
+	}%DIFDELCMD < \item %%%
+\item%DIFAUXCMD
+\DIFdel{e.g., Second .
+..
+	}%DIFDELCMD < \item %%%
+\item%DIFAUXCMD
+\DIFdel{e.g., Third ...
+}
+\end{itemize}%DIFAUXCMD
+%DIFDELCMD < \end{itemize}
+%DIFDELCMD < %%%
+\DIFdel{If the results fall broadly into two categories, you can bring out that distinction here.
+For example, "Our results are both theoretical and applied in nature.
+(two sentences follow, one each on theory and application)"
+}\DIFdelend \DIFaddbegin \section{\DIFadd{Data Analysis}} \label{sec-preliminaries}
+\DIFadd{The data covers six countries: Belgium, France, Germany, Italy, Poland, Spain, two stores: KaggleMart, KaggleRama, and four products.The training set timeline is from 2017 to 2020, and the test set timeline is 2021.
+Firstly, the monthly sales volume of the overall data is analyzed. This paper finds that there is a cyclical trend in the change of sales.
+}\DIFaddend 
+
+%DIF < \todo{What provides the motivation of this work? What are the research issues? What is the rationale of this work? }
+%DIF < \blindtext
+\DIFdelbegin %DIFDELCMD < \todo{At a high level what are the differences in what you are doing, and what others have done? }
+%DIFDELCMD < %%%
+\DIFdel{Keep this at a high level, you can refer to a future section where specific details and differences will be given. 
+But it is important for the reader to know at a high level, what is new about this work compared to other work in the area.
+}\DIFdelend \DIFaddbegin \begin{figure}[!h]
+		\centering
+		\selectcolormodel{rgb}
+		\includegraphics[scale=0.23]{month.eps}
+		%DIF >   \includegraphics[width=0.5\textwidth]{figures//OutAspect_target.eps}\\
+		\caption{\DIFaddFL{Monthly sales}}\label{fig:OutAspect-target}
+\end{figure}
+\DIFadd{Analysis of the store factors will be conducted next. By calculating the daily sales ratio of each store, it is found that KaggleMart's sales ratio remains around 75\%, while KaggleRama's sales ratio is 25\%. This indicates that the sales ratio of stores is almost fixed and unchanged.
+}\DIFaddend 
+
+
+
+%DIF < \todo{What we have done and what are the contributions.}
+%DIF < \blindtext
+\DIFdelbegin %DIFDELCMD < \todo{A roadmap for the rest of the paper}
+%DIFDELCMD < %%%
+\DIFdel{"The remainder of this paper is structured as follows. .." 
+Give the reader a roadmap for the rest of the paper. Avoid redundant phrasing, "In Section 2, In section 3, ... In Section 4, ... " etc.
+}\DIFdelend \DIFaddbegin \begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.21]{store-ratio.eps}
+	%DIF >   \includegraphics[width=0.5\textwidth]{figures//OutAspect_target.eps}\\
+	\caption{\DIFaddFL{Stores ratio}}\label{fig:OutAspect-target}
+\end{figure}
+\DIFaddend 
+
+\DIFdelbegin %DIFDELCMD < \gangli{A few general tips:
+%DIFDELCMD < Don't spend a lot of time into the introduction 
+%DIFDELCMD < telling the reader about what you don't do in the paper. 
+%DIFDELCMD < Be clear about what you do do.
+%DIFDELCMD < Does each paragraph have a theme sentence that sets the stage for the entire paragraph? Are the sentences and topics in the paragraph all related to each other?}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{For more intuitive performance, this paper takes the sales volume of KaggleMart as the benchmark, and multiplies the sales volume of KaggleRama by a weight value to remove the impact of the ratio. The observation chart shows that their sales volume change curves almost coincide, indicating that their sales volume is only related to the total sales volume and has nothing to do with the factors of the store itself.
+}\DIFaddend 
+
+\DIFdelbegin %DIFDELCMD < \gangli{Does each paragraph have a theme 
+%DIFDELCMD < sentence that sets the stage for the entire paragraph? 
+%DIFDELCMD < Are the sentences and topics in the paragraph all related to each other?}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \begin{figure}[htb]
+	\centering
+	\selectcolormodel{rgb}
+	\includegraphics[scale=0.225]{store-trend.eps}
+	%DIF >   \includegraphics[width=0.5\textwidth]{figures//OutAspect_target.eps}\\
+	\caption{\DIFaddFL{Stores ratio trend}}\label{fig:OutAspect-target}
+\end{figure}
+\DIFadd{We analyzed the national factors in the same way and found similar phenomena. The sales volume of each country is different before 2020, and the proportion is almost fixed, while the proportion of six countries is the same in 2020. It can also exclude the influence of the country itself and predict the sales volume of each country through the total sales volume.
+}\DIFaddend 
+
+\DIFdelbegin %DIFDELCMD < \gangli{Do all of your tenses match up in a paragraph?}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \begin{figure}[h]
+	\centering
+	\selectcolormodel{rgb}
+	\includegraphics[scale=0.215]{Country-ratio.eps}
+	%DIF >   \includegraphics[width=0.5\textwidth]{figures//OutAspect_target.eps}\\
+	\caption{\DIFaddFL{Countries ratio}}\label{fig:OutAspect-target}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\selectcolormodel{rgb}
+	\includegraphics[scale=0.235]{Country-trend.eps}
+	%DIF >   \includegraphics[width=0.5\textwidth]{figures//OutAspect_target.eps}\\
+	\caption{\DIFaddFL{Countries ratio trend}}\label{fig:OutAspect-target}
+\end{figure}
+\DIFaddend 
+
+\DIFdelbegin \DIFdel{Test citation~\mbox{%DIFAUXCMD
+\cite{BL12J01}}\hskip0pt%DIFAUXCMD
+. 
+}%DIFDELCMD < \begin{JournalOnly}
+%DIFDELCMD < %%%
+\DIFdel{and~\mbox{%DIFAUXCMD
+\citep{BJL11J01} }\hskip0pt%DIFAUXCMD
+or~\mbox{%DIFAUXCMD
+\citet{BJL11J01}}\hskip0pt%DIFAUXCMD
+.
+}%DIFDELCMD < \end{JournalOnly}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{Finally, we will analyze the store and the country together, and use the KaggleMart of Belgium as the benchmark to draw the broken line chart of the flower removal rate. It was found that the sales curve almost coincided.
+}\DIFaddend 
+
+		\DIFdelbegin \DIFdel{This is for ~}%DIFDELCMD < \cref{tbl:overall-experiments}%%%
+\DIFdel{, }%DIFDELCMD < \todo[fancyline]{Testing.}
+%DIFDELCMD < %%%
+\DIFdel{and this is for ~}%DIFDELCMD < \cref{sec-conclusions}%%%
+\DIFdel{.
+}%DIFDELCMD < \todo[noline]{A note with no line back to the text.}%%%
+%DIF < 
+%DIFDELCMD < \gangli{This is comment from Gang.}
+%DIFDELCMD < \qwu{Response from QW}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \begin{figure}[H]
+	\centering
+	\selectcolormodel{rgb}
+	\includegraphics[scale=0.23]{Countryandstore-trend.eps}
+	%DIF >   \includegraphics[width=0.5\textwidth]{figures//OutAspect_target.eps}\\
+	\caption{\DIFaddFL{Countries and Store trend}}\label{fig:OutAspect-target}
+	\end{figure}
+\DIFaddend 
+
+\DIFdelbegin \DIFdel{Number:
+}%DIFDELCMD < \num{123}%%%
+\DIFdel{.
+}%DIFDELCMD < \numlist{10;30;50;70}%%%
+\DIFdel{,
+}%DIFDELCMD < \numrange{10}{30}%%%
+\DIFdel{,
+}%DIFDELCMD < \SIlist{10;30;45}{\metre}%%%
+\DIFdel{,
+and
+}%DIFDELCMD < \SI{10}{\percent}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{After that, we analyzed the change of the proportion of the four commodities and found that there was a two-year cycle of change.
+}\DIFaddend 
+
+		\DIFdelbegin %DIFDELCMD < \missingfigure[figcolor=white]{Testing figcolor}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \begin{figure}[H]
+	\centering
+	\selectcolormodel{rgb}
+	\includegraphics[scale=0.3]{product-trend.eps}
+	%DIF >   \includegraphics[width=0.5\textwidth]{figures//OutAspect_target.eps}\\
+	\caption{\DIFaddFL{Product ratio trend}}\label{fig:OutAspect-target}
+\end{figure}
+\DIFaddend 
+
+\DIFdelbegin %DIFDELCMD < \begin{ConferenceOnly}
+%DIFDELCMD < %%%
+\DIFdel{We have }%DIFDELCMD < \SI{10}{\hertz}%%%
+\DIFdel{, }%DIFDELCMD < \si{\kilogram\metre\per\second}%%%
+\DIFdel{,
+the range: }%DIFDELCMD < \SIrange{10}{100}{\hertz}%%%
+\DIFdel{.
+$\nicefrac[]{1}{2}$.
+}\DIFdelend \DIFaddbegin \DIFadd{Therefore, we can only predict the total sales volume of each day by aggregating the time series, and then predict the sales volume of various products in stores in various countries by the total sales volume.
+}\DIFaddend 
+
+\DIFdelbegin %DIFDELCMD < \missingfigure{Make a sketch of the structure of a trebuchet.}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \begin{figure}[h]
+	\centering
+	\selectcolormodel{rgb}
+	\includegraphics[scale=0.3]{trainline.eps}
+	%DIF >   \includegraphics[width=0.5\textwidth]{figures//OutAspect_target.eps}\\
+	\caption{\DIFaddFL{Aggregated time series}}\label{fig:OutAspect-target}
+\end{figure}
+\DIFaddend 
+
+\DIFdelbegin %DIFDELCMD < \end{ConferenceOnly}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \section{\DIFadd{Feature Extraction}} \label{sec-method}
+\DIFaddend 
+
+\DIFdelbegin \DIFdel{For~}%DIFDELCMD < \cref{eq:test}%%%
+\DIFdel{,
+as shown below:
+}\DIFdelend \DIFaddbegin \DIFadd{Through the above data analysis, we found that we can predict all results as long as we predict the total daily sales and the proportion of product sales. Therefore, we need to extract the time feature of the training set.
+}\DIFaddend 
+
+\DIFdelbegin \begin{displaymath}\DIFdel{%DIFDELCMD < \label{eq:test}%%%
+a = b \times \sqrt{ab}
+}\end{displaymath}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \DIFadd{By analyzing the sales curve of a week, we find that the sales volume from Sunday to Wednesday is almost the same, while the sales volume from Thursday to Saturday is different every day, so we can extract the time feature of a week.
+}\DIFaddend 
+
+	\DIFdelbegin %DIFDELCMD < \blindmathpaper
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \begin{figure}[H]
+	\centering
+	\selectcolormodel{rgb}
+	\includegraphics[scale=0.25]{week-feature.eps}
+	%DIF >   \includegraphics[width=0.5\textwidth]{figures//OutAspect_target.eps}\\
+	\caption{\DIFaddFL{weekday feature}}\label{fig:OutAspect-target}
+\end{figure}
+\DIFadd{At the same time, in order to make Fourier transform understand the monthly data, we remove the sine value and cosine value of the month. At the same time, we also considered the feature of important festivals in the year. Finally, we get that the features of the training set include 23 features.
+}\DIFaddend 
+
+\DIFdelbegin \section{\DIFdel{Preliminaries}} %DIFAUXCMD
+\addtocounter{section}{-1}%DIFAUXCMD
+%DIFDELCMD < \label{sec-preliminaries}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \section{\DIFadd{Model Train}} \label{sec-experiment}
+\DIFadd{We use Ridge regression from the "linear_model" module to correlate the relationship betweensales and time features , and predict on the test set.Train the model with time features as X and sales as y.The sales of the test set is predicted according to the time features of the test set.Finally, we obtained the total sales prediction curve.
+}\DIFaddend 
+
+\DIFdelbegin %DIFDELCMD < \blindtext
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \begin{figure}[H]
+	\centering
+	\selectcolormodel{rgb}
+	\includegraphics[scale=0.3]{total-sales.eps}
+	%DIF >   \includegraphics[width=0.5\textwidth]{figures//OutAspect_target.eps}\\
+	\caption{\DIFaddFL{total sales forecasting}}\label{fig:OutAspect-target}
+\end{figure}
+\DIFaddend 
+
+\DIFdelbegin %DIFDELCMD < \gliMarker  %%%
+%DIF < TODO: GLi Here
+\DIFdelend \DIFaddbegin \DIFadd{We found that the proportion of sales for a product has a cyclical variation with a period of two years. Therefore, we assign the daily proportion of sales for each product in 2019 to 2021.
+}\DIFaddend 
+
+	\DIFdelbegin \section{\DIFdel{Method}} %DIFAUXCMD
+\addtocounter{section}{-1}%DIFAUXCMD
+%DIFDELCMD < \label{sec-method}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \begin{figure}[htb]
+	\centering
+	\selectcolormodel{rgb}
+	\includegraphics[scale=0.3]{product-ratio-for.eps}
+	%DIF >   \includegraphics[width=0.5\textwidth]{figures//OutAspect_target.eps}\\
+	\caption{\DIFaddFL{Product Ratio Forecast}}\label{fig:OutAspect-target}
+\end{figure}
+\DIFaddend 
+
+\DIFdelbegin %DIFDELCMD < \blindtext
+%DIFDELCMD < \blindlist{itemize}[3]
+%DIFDELCMD < \blinditemize
+%DIFDELCMD < \blindenumerate
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{We assume that the proportion of sales in countries in 2021 is the same as in 2020. In 2020, the proportion of sales in countries accounts for 1/6.The proportion of different stores remains fixed, KaggleMart accounts for 75\%, and KaggleRama accounts for 25\%.
+}\DIFaddend 
+
+	\DIFdelbegin %DIFDELCMD < \blindmathtrue
+%DIFDELCMD < \blindmathfalse
+%DIFDELCMD < \blinddescription
+%DIFDELCMD < 
+
+%DIFDELCMD < \qwuMarker %%%
+%DIF < TODO: QWu Here
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\section{\DIFdel{Experiment and Analysis}} %DIFAUXCMD
+\addtocounter{section}{-1}%DIFAUXCMD
+%DIFDELCMD < \label{sec-experiment}
+%DIFDELCMD < 
+
+%DIFDELCMD < \begin{table}  %%%
+\DIFdelendFL \DIFaddbeginFL \begin{figure}[H]
+	\DIFaddendFL \centering
+	\DIFaddbeginFL \selectcolormodel{rgb}
+	\includegraphics[scale=0.2]{final-for.eps}
+	%DIF >   \includegraphics[width=0.5\textwidth]{figures//OutAspect_target.eps}\\
+	\DIFaddendFL \caption{\DIFdelbeginFL \DIFdelFL{Precision Comparison on Event Detection Methods}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Final Forecasting}\DIFaddendFL }\DIFdelbeginFL %DIFDELCMD < \label{tbl:overall-experiments}
+%DIFDELCMD <   \begin{tabular}{cccc}
+%DIFDELCMD < \toprule
+%DIFDELCMD <     %%%
+%DIF <  after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    %DIFDELCMD < & %%%
+\DIFdelFL{OR Event Detection }%DIFDELCMD < & %%%
+\DIFdelFL{AC Event Detection }%DIFDELCMD < & %%%
+\DIFdelFL{TC Event Detection }%DIFDELCMD < \\
+%DIFDELCMD < \midrule
+%DIFDELCMD <     %%%
+\DIFdelFL{precision }%DIFDELCMD < & %%%
+\DIFdelFL{0.83 }%DIFDELCMD < & %%%
+\DIFdelFL{0.69 }%DIFDELCMD < & %%%
+\DIFdelFL{0.46 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{recall }%DIFDELCMD < & %%%
+\DIFdelFL{0.68 }%DIFDELCMD < & %%%
+\DIFdelFL{0.48 }%DIFDELCMD < & %%%
+\DIFdelFL{0.36 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{F-score }%DIFDELCMD < & %%%
+\DIFdelFL{0.747 }%DIFDELCMD < & %%%
+\DIFdelFL{0.57 }%DIFDELCMD < & %%%
+\DIFdelFL{0.4 }%DIFDELCMD < \\
+%DIFDELCMD < \bottomrule
+%DIFDELCMD < \end{tabular}
+%DIFDELCMD < \end{table}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \label{fig:OutAspect-target}
+\end{figure}
+\DIFaddend 
+
+
+\section{Conclusions} \label{sec-conclusions}
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{This is a time series forecasting problem that includes complex elements.Simplifying the effects of complex factors through analyzing patterns discovered through single factor analysis.Use linear regression method to predict the relationship between sales volume and time characteristics.
+}\DIFaddend \blindtext
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\section*{\DIFdel{Acknowledgement}}
+%DIFAUXCMD
+%DIFDELCMD < 
+
+%DIFDELCMD < \lipsum[1]
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{The authors would like to thank \ldots
+}\DIFdelend 
+
+
+
+
+

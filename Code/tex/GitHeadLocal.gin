@@ -1,0 +1,17 @@
+\usepackage[%
+        shash={029ad9d},
+        lhash={029ad9d832d1a7d145bb788acd923ef038163703},
+        authname={kksmi},
+        authemail={www.928028206@qq.com},
+        authsdate={2023-07-29},
+        authidate={2023-07-29 14:06:35 +0800},
+        authudate={1674972395},
+        commname={kksmi},
+        commemail={www.928028206@qq.com},
+        commsdate={2023-07-29},
+        commidate={2023-07-29 14:06:35 +0800},
+        commudate={1674972395},
+        refnames={ (HEAD -> main)},
+        firsttagdescribe={029ad9d-*},
+        reltag={029ad9d-*}
+    ]{gitexinfo}
